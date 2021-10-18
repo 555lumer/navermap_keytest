@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>sparta map test</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=0i27vl5n5q"></script>
 </head>
 <body>
-    
+<div id="map" style="width:100%;height:100vh;"></div>
 
-    
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.4981315714669, 127.03787855413603),
+    zoom: 10
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+</script>
 </body>
 </html>
